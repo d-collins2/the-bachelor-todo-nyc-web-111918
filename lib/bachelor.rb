@@ -56,6 +56,6 @@ def get_average_age_for_season(data, season)
   end
   p arr 
   p len = arr.length  
-  p = arr.reduce(:+)
-  
+  p sum = arr.reduce(:+)
+  sum / len.to_f 
 end
