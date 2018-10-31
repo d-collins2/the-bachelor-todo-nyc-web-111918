@@ -49,7 +49,11 @@ def get_average_age_for_season(data, season)
   arr = []
   data.each do |season, array|
     array.each do |people|
-      
+      people.each do |k,v|
+        if v == occupation
+          return people["name"]
+        end
+      end
     end
   end
 end
