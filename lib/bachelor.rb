@@ -54,10 +54,8 @@ def get_average_age_for_season(data, season)
       end
     end 
   end
-   len = arr.length  
-   sum = arr.reduce(:+)
-  p whole = arr.reduce(:+) / len 
-  p num = sum /len.to_f
+   whole = arr.reduce(:+) / arr.length  
+   num = arr.reduce(:+) / arr.length .to_f
     if num - whole >= 0.5 
       return num.ceil 
     else 
