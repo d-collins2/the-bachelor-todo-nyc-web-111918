@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  data[season]["status"] == "winner"
+  data[season]["status"] == "Winner"
 end
 
 def get_contestant_name(data, occupation)
